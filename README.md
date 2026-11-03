@@ -36,7 +36,7 @@ A GitHub kiadási csatolmány SHA-256 értéke egyezett a kipróbált helyi IPK-
 
 ## ℹ️ További dokumentáció
 
-[Hogyan készült és mit teszteltünk](docs/HOGYAN_KESZULT.md) · [GYIK](docs/GYIK.md) · [Források, licencek](docs/LICENCEK.md) · [Közzétételi útmutató](docs/GITHUB_KOZZETETEL.md)
+[Hogyan készült és mit teszteltünk](docs/HOGYAN_KESZULT.md) · [GYIK](docs/GYIK.md) · [Források, licencek](docs/LICENCEK.md) · 
 
 ## Eredet és felelősség
 
