@@ -1,5 +1,9 @@
 # Telepítés – részletes, magyar útmutató
 
+**Teljesen kezdő vagy?** Először olvasd el a [KEZDOKNEK.md](KEZDOKNEK.md) útmutatót. Ha nincs root, [SlopBro](ROOTOLAS-SLOPBRO.md); ha nincs SSH, [SSH Windows/WSL](SSH-WINDOWS.md).
+
+**Telepítési alapelv:** a magyar IPK-t a saját tévén egy **már telepített eredeti CleanYourTV 1.6.14 Managerre** tettük fel. A mostani újabb upstream kiadásokra visszatelepítést nem teszteltünk. Ha az eredeti manager már újabb, ne erőltesd a 1.6.14 felültelepítését.
+
 ## 0. Amit biztosan tudunk
 
 Az alábbi IPK-t **meglévő** CleanYourTV Manager 1.6.14 telepítésére telepítettük rá egy rootolt LG 65NANO813QA tévén. A telepítés és a magyar nyelvű főképernyő működött. **Új, üres rendszerre történő közvetlen telepítést nem teszteltünk**, ezért kezdőknek a hivatalos Manager előzetes telepítését javasoljuk. A lentiek egy részét más készüléken még ellenőrizni kell.

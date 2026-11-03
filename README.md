@@ -1,52 +1,45 @@
 # 🇭🇺 CleanYourTV Magyar – LG webOS
-## 📥 Magyar CleanYourTV 1.6.14 letöltése
 
-**[⬇️ MAGYAR IPK TELEPÍTŐ LETÖLTÉSE](https://github.com/Davhentel/CleanYourTV-Magyar-webOS/releases/download/v1.6.14-hu1/CleanYourTV-1.6.14-MAGYAR-HIVATALOS-CSOMAGOLO.ipk)**
+**Nem hivatalos közösségi magyarítás a CleanYourTV 1.6.14-hez.** Ez nem az LG teljes webOS rendszerének magyarítása, hanem a CleanYourTV saját kezelőfelülete és alternatív Home-indítója.
 
-📖 [Magyar telepítési útmutató](docs/TELEPITES.md)
+## ⬇️ Letöltés
 
-✅ Tesztelve: LG 65NANO813QA · webOS 22 · firmware 04.60.91
+**[MAGYAR IPK TELEPÍTŐ LETÖLTÉSE](https://github.com/Davhentel/CleanYourTV-Magyar-webOS/releases/download/v1.6.14-hu1/CleanYourTV-1.6.14-MAGYAR-HIVATALOS-CSOMAGOLO.ipk)**
 
-⚠️ Rootolt LG webOS tévé és SSH-hozzáférés szükséges. Más készülékeken a működés nem garantált.
+**[Kezdőknek: teljes útvonal Windows + LG TV](docs/KEZDOKNEK.md)** · [Rootolás SlopBro-val](docs/ROOTOLAS-SLOPBRO.md) · [SSH beállítása](docs/SSH-WINDOWS.md) · [Részletes IPK-telepítés](docs/TELEPITES.md) · [Hibakeresés és visszaállítás](docs/HELYREALLITAS.md)
 
-**Nem hivatalos közösségi magyar kiadás a CleanYourTV 1.6.14-hez.** Az eredeti CleanYourTV fejlesztője: [lasharor/cleanyourtv-WebOS](https://github.com/lasharor/cleanyourtv-WebOS). A magyar fordítás hivatalos beolvasztási kérelme: [PR #130](https://github.com/lasharor/cleanyourtv-WebOS/pull/130).
+**Figyelem:** Rootolt LG tévé és működő SSH-hozzáférés szükséges. **Ne nyomd meg a „Set up now” gombot**, ha meg akarod tartani az LG eredeti főképernyőjét. A magyar IPK önmagában nem rootolja a TV-t.
 
-> **Tesztelt készülék:** LG 65NANO813QA • webOS 22 / TV 7.6.0 • firmware 04.60.91 • 2026. november 3. A magyar Manager és a beállított magyar Home-főképernyő működött. **Más készüléken nem garantált**; a tiszta, előzmény nélküli telepítést sem teszteltük végig.
+## ✅ Amit tényleg kipróbáltunk
 
-## Mire jó?
+- **LG 65NANO813QA**, webOS 22 / webOS TV 7.6.0, firmware **04.60.91**.
+- SlopBro segítségével rootolt készülék, Homebrew Channel 0.7.3, SSH-hozzáférés.
+- Először hivatalos CleanYourTV Manager 1.6.14, majd magyar IPK felültelepítése.
+- A magyar Manager és a **„Set up now” után az új magyar Home** működött (2026. november 3.).
+- A magyar IPK SHA-256 értéke és a ténylegesen telepített HTML-fájl ellenőrizve.
 
-Rootolt LG webOS tévén magyar nyelvű CleanYourTV kezelőfelületet és – külön beállítás után – a CleanYourTV magyar főképernyőjét használhatod. **Nem az LG gyári webOS rendszerének teljes lefordítása.**
+**Nem igazolt:** más tévémodellek és firmware-ek, teljesen szűz készülék minden beállításának végigtesztelése, a teljes visszaállítás a saját tévénken, minden kiegészítő és a hosszú távú frissítési viselkedés. **A leírás nem sikergarancia.**
 
-## Gyors telepítés
+## 🧭 Telepítési sorrend
 
-1. Olvasd el az [előfeltételeket és a részletes útmutatót](docs/TELEPITES.md). **Rootolt tévé és SSH-kapcsolat szükséges; az IPK önmagában nem rootolja a TV-t.**
-2. Töltsd le a **magyar 1.6.14 IPK-t a projekt GitHub Releases oldaláról** (*amikor a tulajdonos feltöltötte*), és ellenőrizd az SHA-256-ot.
-3. Másold fel az IPK-t a TV `/tmp/` könyvtárába SSH/SCP segítségével.
-4. Telepítsd a webOS `com.webos.appInstallService/dev/install` szolgáltatásával, és ellenőrizd a `state: installed` állapotot.
-5. Nyisd meg a CleanYourTV Manager alkalmazást; ellenőrizd, hogy a szöveg magyar.
-6. **Csak ha az LG gyári Home-ot le szeretnéd cserélni**, válaszd a Managerben a „Set up now” / magyar megfelelőjét.
+1. **Ellenőrizd a kompatibilitást**: [webOS Homebrew rootolási útmutató](https://www.webosbrew.org/guides/rooting/), [CleanYourTV követelmények](https://lasharor.github.io/cleanyourtv-WebOS/install/). A CleanYourTV webOS 5 vagy újabb rendszert igényel.
+2. **Rootolás – csak ha még nem rootolt**: [SlopBro, a nálunk használt módszer](docs/ROOTOLAS-SLOPBRO.md). Nem minden firmware sebezhető.
+3. **Homebrew Channel és SSH**: [Windows / Ubuntu / SSH-kulcs](docs/SSH-WINDOWS.md).
+4. **Hivatalos CleanYourTV Manager 1.6.14**, utána [magyar IPK](docs/TELEPITES.md). **Ha csak újabb hivatalos Manager érhető el, az 1.6.14 felültelepítését nem teszteltük; ne erőltesd a visszaminősítést.**
+5. A magyar kezelőfelület ellenőrzése; csak ezután, **tudatos döntéssel**, „Set up now”, ha új főképernyőt szeretnél.
 
-Az ellenőrzött parancsokat és a lehetséges hibákat a [TELEPITES.md](docs/TELEPITES.md) tartalmazza.
+## 🔐 Ellenőrzőösszeg
 
-## Letöltendő fájlok
+`82a04f3690f5cf43dcab69ed851e78e293a418331d1318016cc392f0cd1c82f9` — `CleanYourTV-1.6.14-MAGYAR-HIVATALOS-CSOMAGOLO.ipk`
 
-| Fájl | Funkció |
-|---|---|
-| `CleanYourTV-1.6.14-MAGYAR-HIVATALOS-CSOMAGOLO.ipk` | A tesztelt magyar csomag – **GitHub Release-csatolmányként szükséges feltölteni** |
-| `SHA256SUMS` | Az eredeti tesztelt csomag ellenőrzőösszege |
-| `i18n/hu.json` | Magyar forrásfordítás – a PR #130 forrásából átmásolható |
-| `docs/TELEPITES.md` | Telepítés lépésenként |
-| `docs/HELYREALLITAS.md` | Visszaállítás és hibakeresés |
-| `docs/HOGYAN_KESZULT.md` | Mi volt valóban tesztelve; forrás és módszer |
+A GitHub kiadási csatolmány SHA-256 értéke egyezett a kipróbált helyi IPK-éval. A checksum a sérülést segít észrevenni, nem helyettesíti a forrás ellenőrzését.
 
-**Fontos:** a jelen sablon **nem tartalmazza a működő IPK bináris fájlt**. A közzétételhez az eredeti, ellenőrzött IPK-t kell feltölteni, a fájl nevének és tartalmának megváltoztatása nélkül. A GitHubon a `Releases` → `Create a new release` résznél csatold az IPK-t.
+## ℹ️ További dokumentáció
 
-## Frissítések
+[Hogyan készült és mit teszteltünk](docs/HOGYAN_KESZULT.md) · [GYIK](docs/GYIK.md) · [Források, licencek](docs/LICENCEK.md) · [Közzétételi útmutató](docs/GITHUB_KOZZETETEL.md)
 
-A csomag **1.6.14** verzióra épül, nem követi automatikusan a későbbi hivatalos kiadásokat. Egy későbbi automatikus frissítés felülírhatja a magyar fájlokat. Az alkalmazás külön letölthet launcher- és service-frissítéseket; ezek magyarítása a jelen csomaggal **nem garantált**. Mentés ajánlott, mielőtt frissítesz.
+## Eredet és felelősség
 
-## Hivatkozások és felelősség
+Eredeti projekt: [lasharor/cleanyourtv-WebOS](https://github.com/lasharor/cleanyourtv-WebOS) · Magyar fordítás: [PR #130](https://github.com/lasharor/cleanyourtv-WebOS/pull/130) · Rootolási eszköz: [throwaway96/slopbro](https://github.com/throwaway96/slopbro).
 
-A projekt független közösségi magyarítás, nem hivatalos LG- vagy CleanYourTV-kiadás. Root-hozzáféréssel futó szoftvert telepítesz; az eljárás kockázatos lehet. A saját felelősségedre használd. Kérjük, jelentsd a modellt, webOS-verziót, firmware-t és pontos hibaüzenetet, ha nem működik; **ne** ossz meg SSH-kulcsot, jelszót vagy személyes hálózati adatokat.
-
-Az eredeti projekt MIT-licencű, és harmadik féltől származó összetevőket is tartalmaz. A bináris újraterjesztésekor az eredeti licenc- és harmadikfeles jogi tájékoztatókat is meg kell őrizni; lásd [LICENCEK.md](docs/LICENCEK.md).
+Nem hivatalos LG- vagy CleanYourTV-kiadás. Rootolással, SSH-val és rendszerindító-módosítással jár; saját felelősségre használd. **Privát SSH-kulcsot, jelszót, tokeneket soha ne tölts fel hibajelentéshez.**

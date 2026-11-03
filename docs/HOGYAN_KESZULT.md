@@ -6,6 +6,10 @@
 **Homebrew Channel:** 0.7.3, root SSH-hozzáféréssel  
 **Alapkiadás:** eredeti CleanYourTV 1.6.14.
 
+## Rootolási előzmények
+
+A tesztelt LG 65NANO813QA tévén a [SlopBro](https://github.com/throwaway96/slopbro) Windows alatti Python-eszközt használtuk, a `--webos-version 7` kapcsolóval. A sikeres rootolás után a Homebrew Channel `Root status: ok` jelzést adott, majd root SSH-kapcsolatot állítottunk be. Részletek: [ROOTOLAS-SLOPBRO.md](ROOTOLAS-SLOPBRO.md). A Windows PC és a TV IP-címe csak a konkrét tesztünk példája, más felhasználókra nem alkalmazható.
+
 ## A munka röviden
 
 1. A hivatalos 1.6.14-es IPK-ből kiindulva a magyar `i18n/hu.json` fordítást használó változatot készítettünk. A fordítás **770 fordítási kulcsot** fedett le, és a [#130-as upstream PR](https://github.com/lasharor/cleanyourtv-WebOS/pull/130) tartalmazza.

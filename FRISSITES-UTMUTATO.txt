@@ -1,0 +1,10 @@
+GITHUB DOKUMENTÁCIÓ FRISSÍTÉSE – 2026-11-03
+
+1. A ZIP kibontása után a CleanYourTV-Magyar-webOS-FRISSITES mappa TARTALMÁT töltsd fel ide:
+   https://github.com/Davhentel/CleanYourTV-Magyar-webOS/upload/main
+2. A GitHub meglévő fájlok felülírásához kérhet más eljárást; ha az Upload files nem engedi, használj Git parancsokat vagy a GitHub webes Edit funkcióját.
+3. A README.md és több docs-fájl frissítése, új KEZDOKNEK.md, ROOTOLAS-SLOPBRO.md, SSH-WINDOWS.md, GYIK.md.
+4. A kiadás IPK-JÁT NEM CSERÉLJÜK, és a v1.6.14-hu1 kiadási TAG-et nem módosítjuk.
+5. KÜLÖN FELADAT: töltsd fel az eredeti v1.6.14 LICENSE és THIRD-PARTY.md fájlokat az eredeti CleanYourTV GitHubjáról, és a magyar i18n/hu.json forrást a PR #130-ból.
+6. A rootolást csak az eredeti SlopBro hivatalos leírásával együtt kövessétek.
+7. A fájlok közti hivatkozásokat végül ellenőrizd a GitHub oldalon.
