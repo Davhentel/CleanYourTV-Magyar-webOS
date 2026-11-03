@@ -1,4 +1,13 @@
 # 🇭🇺 CleanYourTV Magyar – LG webOS
+## 📥 Magyar CleanYourTV 1.6.14 letöltése
+
+**[⬇️ MAGYAR IPK TELEPÍTŐ LETÖLTÉSE](https://github.com/Davhentel/CleanYourTV-Magyar-webOS/releases/download/v1.6.14-hu1/CleanYourTV-1.6.14-MAGYAR-HIVATALOS-CSOMAGOLO.ipk)**
+
+📖 [Magyar telepítési útmutató](docs/TELEPITES.md)
+
+✅ Tesztelve: LG 65NANO813QA · webOS 22 · firmware 04.60.91
+
+⚠️ Rootolt LG webOS tévé és SSH-hozzáférés szükséges. Más készülékeken a működés nem garantált.
 
 **Nem hivatalos közösségi magyar kiadás a CleanYourTV 1.6.14-hez.** Az eredeti CleanYourTV fejlesztője: [lasharor/cleanyourtv-WebOS](https://github.com/lasharor/cleanyourtv-WebOS). A magyar fordítás hivatalos beolvasztási kérelme: [PR #130](https://github.com/lasharor/cleanyourtv-WebOS/pull/130).
 
