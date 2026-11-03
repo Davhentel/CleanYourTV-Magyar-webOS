@@ -8,9 +8,11 @@ A működő IPK a hivatalos 1.6.14-es csomagból készült módosított csomag. 
 
 A projekt nevében vagy leírásában ne állítsd, hogy ezt az LG vagy az eredeti CleanYourTV fejlesztője hivatalosan támogatja.
 
-## Közzététel előtt még pótlandó a forrásból
+## Közzétett licencfájlok
 
-A GitHub-repozitóriumba a megfelelő eredeti 1.6.14-es kiadásból másoljuk be az **`LICENSE`** és **`THIRD-PARTY.md`** fájlokat. A kész dokumentációcsomag ezeket **nem helyettesíti**, és nem állítjuk, hogy már feltöltöttük őket. A forráskód tulajdonosainak és harmadik feleknek az értesítéseit meg kell tartani.
+Az eredeti CleanYourTV projekt `LICENSE` és `THIRD-PARTY.md` fájljait feltöltöttük a magyar GitHub-repozitórium főkönyvtárába.
+
+A magyar változat nem hivatalos közösségi kiadás. Az eredeti fejlesztők és a harmadik felek szerzői jogi értesítéseit megőrizzük.
 
 - [CleanYourTV v1.6.14 – LICENSE](https://github.com/lasharor/cleanyourtv-WebOS/blob/v1.6.14/LICENSE)
 - [CleanYourTV v1.6.14 – THIRD-PARTY.md](https://github.com/lasharor/cleanyourtv-WebOS/blob/v1.6.14/THIRD-PARTY.md)
